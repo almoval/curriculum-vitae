@@ -39,19 +39,34 @@ nav{
 }
 #bannerimagen{
     width: 100%;
-    background-image:https://github.com/almoval/curriculum-vitae/blob/main/IMAGENES/banner-dog-new-year-carnival-1602676.jpg;
+    background-image: url("https://github.com/almoval/curriculum-vitae/blob/main/IMAGENES/banner-dog-new-year-carnival-1602676.jpg");
     height:405px;
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-    
+}
 
- .botonSubmit {
+input, textarea{
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+textarea{
+height: 50px;
+}
+
+.botonSubmit {
     background-color: #04aa6d;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 15px;
-}
+    margin-top: 15px;}
+
+.botonSubmit:hover{
+    background-color: #45a049;}
