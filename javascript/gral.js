@@ -4,8 +4,11 @@
 // console.log (variable2);
  let resultado= sumar (1,2);
  const resultadoResta = resta (4,3);
- console.log (resultado)
- console .log (resultadoResta)
+ mostrarenConsola (resultado)
+ mostrarenConsola (resultadoResta)
+ function mostrarenConsola (valor){
+    console.log (valor)
+}
 
  function sumar (num1,num2) {
      return num1 + num2;
