@@ -4,6 +4,11 @@ const valores =window.location.search;
 // Mostramos los valores en consola:
 console.log (valores)
 
+var campoNombre=false;
+// var campoTelefono=false;
+// var campoCorreo=false;
+// var campoCampo=false;
+
 // // Resultado
 // nombre=algo&telefono=algo&correo=algo%40algo&campo=algo
 
@@ -11,32 +16,49 @@ console.log (valores)
 const urlParams = new URLSearchParams (valores);
 
 // Accedemos a los valores
-var nombre= urlParams.get("nombre");
-var telefono= urlParams.get("telefono");
-var correo= urlParams.get("correo");
-var campo= urlParams.get("campo");
-console.log(nombre);
-console.log(telefono);
-console.log(correo);
-console.log(campo);
+var Nombre= urlParams.get("Nombre");
+var Telefono= urlParams.get("Telefono");
+var Correo= urlParams.get("Correo");
+var Campo= urlParams.get("Campo");
+console.log(Nombre);
+console.log(Telefono);
+console.log(Correo);
+console.log(Campo);
 
-if(nombre != null && telefono !=null && correo!=null && campo !=null){
+if(Nombre != null && Telefono !=null && Correo!=null && Campo !=null){
     alert("los campos han sido completadoa correcamente se ejecutara el codigo");
 }else{
     alert("los campos no han sido completados correctamente")
 }
 
 function validateFormContacto() {
-    let nombre=document.getElementById("nombre");
-    console.log(nombre);
-    console.log(nombre.value);
-    if(nombre.value.lengt >2){
+    let Nombre=document.getElementById("nombre");
+    console.log(Nombre);
+    console.log(Nombre.value);
+    if(Nombre.value.lengt >2){
       campoNombre=true;
-      document.getElementById("nombre").classList.remove("error");
+      document.getElementById("Nombre").classList.remove("error");
       validarFormulari();
     }else{
         campoNombre=false;
-        document.getElementById("nombre").classList.add("error");
+        document.getElementById("Nombre").classList.add("error");
         validarFormulario();
     }
 }
+function validarFormulario(){
+    if(campoNombre){
+        document.getElementById("botonSubmit").removeAttribute("disabled");
+        // buscamos en el dom el boton del formulario y lo habilitamos
+    }else{
+        document.getElementById("botonSubmit").setAttribute("disabled","disabled");
+        // buscamos en el dom el boton del formulario y lo habilitamos
+    }
+}
+
+function validarCampos(){
+    if(campoNombre){
+
+    }
+}
+
+
