@@ -32,7 +32,7 @@ if(Nombre != null && Telefono !=null && Correo!=null && Campo !=null){
 }
 
 function validateFormContacto() {
-    let Nombre=document.getElementById("nombre");
+    let Nombre=document.getElementById("Nombre");
     console.log(Nombre);
     console.log(Nombre.value);
     if(Nombre.value.lengt >2){
@@ -56,9 +56,84 @@ function validarFormulario(){
 }
 
 function validarCampos(){
-    if(campoNombre){
+    if(campoTelefono){
+
+    }
+}
+function validateFormContacto() {
+    let Telefono=document.getElementById("Telefono");
+    console.log(Telefono);
+    console.log(Telefono.value);
+    if(Telefono.value.lengt >2){
+      campoTelefono=true;
+      document.getElementById("Telefono").classList.remove("error");
+      validarFormulari();
+    }else{
+        campoTelefono=false;
+        document.getElementById("Telefono").classList.add("error");
+        validarFormulario();
+    }
+}
+function validarFormulario(){
+    if(campoTelefono){
+        document.getElementById("botonSubmit").removeAttribute("disabled");
+        // buscamos en el dom el boton del formulario y lo habilitamos
+    }else{
+        document.getElementById("botonSubmit").setAttribute("disabled","disabled");
+        // buscamos en el dom el boton del formulario y lo habilitamos
+    }
+}
+
+function validarCampos(){
+    if(campoTelefono){
 
     }
 }
 
+function validateFormContacto() {
+    let Mail=document.getElementById("Mail");
+    console.log(Mail);
+    console.log(Mail.value);
+    if(Mail.value.lengt >2){
+      campoMail=true;
+      document.getElementById("Mail").classList.remove("error");
+      validarFormulari();
+    }else{
+        campoMail=false;
+        document.getElementById("Mail").classList.add("error");
+        validarFormulario();
+    }
+}
+function validarFormulario(){
+    if(campoMail){
+        document.getElementById("botonSubmit").removeAttribute("disabled");
+        // buscamos en el dom el boton del formulario y lo habilitamos
+    }else{
+        document.getElementById("botonSubmit").setAttribute("disabled","disabled");
+        // buscamos en el dom el boton del formulario y lo habilitamos
+    }
+}
 
+function validateFormContacto() {
+    let Campo=document.getElementById("Campo");
+    console.log(Campo);
+    console.log(Campo.value);
+    if(Campo.value.lengt >2){
+      campoCampo=true;
+      document.getElementById("Campo").classList.remove("error");
+      validarFormulari();
+    }else{
+        campoCampo=false;
+        document.getElementById("Campo").classList.add("error");
+        validarFormulario();
+    }
+}
+function validarFormulario(){
+    if(campoCampo){
+        document.getElementById("botonSubmit").removeAttribute("disabled");
+        // buscamos en el dom el boton del formulario y lo habilitamos
+    }else{
+        document.getElementById("botonSubmit").setAttribute("disabled","disabled");
+        // buscamos en el dom el boton del formulario y lo habilitamos
+    }
+}
