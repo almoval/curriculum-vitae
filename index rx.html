@@ -6,48 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLANILLA DE CONTROL DE PLACAS</title>
-    <metacharset="UTF-8">
-    <link rel="stylesheet" href="./estilos.css">
-    <style>
-        img{
-          height: 300px;
-          width: 300px;
-        }
-      </style>
+        <link rel="stylesheet" href="./estilos.css">
+        
+        <style>
+            img {
+                height: 300px;
+                width: 300px;
+            }
+        </style>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
 </head>
+
 <body>
-    <h1 align="center">Control Diario de Placas</h1>
-    <img src="C:\Users\Romi\OneDrive\Documentos\GitHub\curriculum-vitae\IMAGENES\istockphoto-684931694-612x612.jpg" alt="servicio" class="centrado">
+    <h1 style="text-align: center;">Control Diario de Placas</h1>
+    <img src="./IMAGENES/istockphoto-684931694-612x612.jpg" alt="servicio" class="centrado">
 
     <div>
-        <form action="index rx.html" style="margin: 150px;" method="get"></form>
-        <li><label for="Cantidad de Placas" style="margin:left;"><u><b><i>Cantidad de Placas</label></i></b></u> 
-            <label for="choose">(1ª Guardia)</label><input id="choose" name="i_like">
-        </li>
-        <li><label for=" Medida 43*24" style="margin-left:  1S0px;"><u><b><i> Medida 43*24</label></i></b></u>
-            <input id="choose" name="i_like">
-        </li>
-        <li><label for=" Medida 24*24" style="margin-left:  1S0px;"><u><b><i> Medida 24*24</label></i></b></u>
-            <input id="choose" name="i_like">
-        </li>
-        <li><label for="Medida 13*18"><u><b><i> Medida 13*18</label></i></b></u>
-            <input type="text" class="linkNav">
-        </li>
-        
-        <li><label for="Placas Final del Dia"><u><b><i>Placas Final del Dia</label></i></b></u>
-                <input type="text" class="linkNav">
-        </li>
-        <li><button type="Submit" class="botonSubmit">Enviar</button>
-            <label for="tel" style="margin: 15px;"></label>
-        </li>
-      
-       </div>
-       <div class="container">
-        <form action="index rx.html" method="get" name="rx">
-          </form>
-        <form>
-        
+        <form style="margin: 100px;">
+            <div style="margin: 3px; display: flex; justify-content: space-between; width: 500px;" >
+                <label for="CantPlacas" class="nombre" style="margin:left;height: 30px;">
+                    <span style="font-weight:bold; font-style: italic;text-decoration: underline"> 
+                        Cantidad de placas </span> 
+                    (1ª Guardia)
+                </label>
+                <input type="text" class="linkNav" id="CantPlacas" >
+            </div>
+            <div class="formato">
+                <label for="med43x24" class="nombre" style="margin-left:  1S0px;">
+                        <span style="font-weight:bold; font-style: italic;text-decoration: underline">
+                            Medida 43x24</span> 
+                </label>
+                <input id="med43x24" type="text" class="linkNav" >
+            </div>
+            <div class="formato">
+                <label for=" Medida 24x24" class="nombre" style="margin-left:  1S0px;">
+                        <span style="font-weight:bold; font-style: italic;text-decoration: underline">
+                            Medida 24*24</span> 
+                </label>
+                <input type="text" class="linkNav" id="med24x24">
+            </div>
+            <div class="formato">
+                <label for="Medida 13x18" class="nombre" style="margin-left:  1S0px;">
+                        <span style="font-weight:bold; font-style: italic;text-decoration: underline">
+                            Medida 13x18</span> 
+                </label>
+                <input type="text" class="linkNav" id="med13x18">
+            </div>
+            <div class="formato" >
+                <label for="Placas Final del Dia" class="nombre" style="margin-left:  1S0px;">
+                    <span style="font-weight:bold; font-style: italic;text-decoration: underline">
+                        Placas Final del Dia</span>
+                </label>
+                <input type="text" class="linkNav" id="Final del Dia">
+            </div>
+            <div>
+                <input type="button" class="botonSubmit" onClick="calcular()" value="Calcular">
+                <label for="tel" style="margin: 15px;"></label>
+            </div>
         </form>
-        
-        </div>
+
+    </div>
+    <script src="./javascript/control tpf.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
 </body>
+
+</html>

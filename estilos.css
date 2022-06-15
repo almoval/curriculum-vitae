@@ -5,5 +5,20 @@ body{
 .centrado{
         margin:10px auto;
         display:block;
+    }
+    
+.linkNav{border: 2px solid black;
+    background-color:yellowgreen;
 }
 
+.nombre{
+    background-color: #3a47d5
+
+;
+}
+.formato{
+    margin: 3px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+} 
