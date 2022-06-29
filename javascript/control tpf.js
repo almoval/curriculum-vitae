@@ -39,8 +39,8 @@ document.getElementById("FinalDelDia").value = restar;
 //<button type="button" class="botonSubmit" onclick="restar()">restar</button>
 
 
- function restar() {
-   if(CantPlacas != null && med43x24 !=null  && med24x24!=null && med13x18 !=null ){
+ function FinalDelDia() {
+   if(document.getElementById("CantPlacas") != null && document.getElementById("med43x24") !=null  && document.getElementById("med24x24")!=null && document.getElementById("med13x18") !=null ){
         alert("los campos han sido completadoa correcamente se ejecutara el formulario");
    }else{
        alert("los campos no han sido completados correctamente")
