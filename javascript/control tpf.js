@@ -27,13 +27,32 @@
 // var restar document.getElementById("Final del Dia")=a-b-c-d;
 // document.form.resultado.value=resta;
 
-funcion restar(){
+function restar(){
 var a=parseInt(document.getElementById("CantPlacas").value);
 var b=parseInt(document.getElementById("med43x24").value);
 var c=parseInt(document.getElementById("med24x24").value);
 var d=parseInt(document.getElementById("med13x18").value);
-var restar ("Final del Dia")=a-b-c-d;
-document.form.resultado.value=resta;
+var restar =a-b-c-d;
+document.getElementById("FinalDelDia").value = restar;
+// document.form.resultado.value=restar;
 }
-<button type="button" class="botonSubmit" onclick="restar()">restar</button>
+//<button type="button" class="botonSubmit" onclick="restar()">restar</button>
 
+
+
+// Funcion Calcular() {
+//     if(CantPlacas != 0 && med43x24 !=0 && med24x24!=0 && med13x18 !=0 ){
+//         alert("los campos han sido completadoa correcamente se ejecutara el codigo");
+//     }else{
+//         alert("los campos no han sido completados correctamente")
+//     }
+//     }
+function FinalDelDia(){
+    if(Calcular){
+        document.getElementById("botonSubmit").removeAttribute("disabled");
+        // buscamos en el dom el boton del formulario y lo habilitamos
+    }else{
+        document.getElementById("botonSubmit").setAttribute("disabled","disabled");
+        // buscamos en el dom el boton del formulario y lo habilitamos
+    }
+}
