@@ -32,7 +32,8 @@ function restar(){
     var c=parseInt(document.getElementById("med24x24").value);
     var d=parseInt(document.getElementById("med13x18").value);
     var resta=a-b-c-d;
-    return resta= a - b -c -d;
+    return resta= a-b-c-d;
+    console.log=resta
    document.FinaldelDia.button.value=resta;
 }
     // <button type="button" class="botonSubmit" onClick="calcular()">calcular</button>
