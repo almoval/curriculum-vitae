@@ -26,7 +26,7 @@ console.log(Correo);
 console.log(Campo);
 
 if(Nombre != null && Telefono !=null && Correo!=null && Campo !=null){
-    alert("los campos han sido completadoa correcamente se ejecutara el codigo");
+    alert("los campos han sido completados correcamente se ejecutara el codigo");
 }else{
     alert("los campos no han sido completados correctamente")
 }

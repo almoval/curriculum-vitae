@@ -39,13 +39,15 @@ document.getElementById("FinalDelDia").value = restar;
 //<button type="button" class="botonSubmit" onclick="restar()">restar</button>
 
 
- function restar() {
-   if(document.getElementById("CantPlacas") != null && document.getElementById("med43x24") !=null  && document.getElementById("med24x24")!=null && document.getElementById("med13x18") !=null ){
-        alert("los campos han sido completadoa correcamente se ejecutara el formulario");
-   }else{
-       alert("los campos no han sido completados correctamente")
-  }
-  }
+ function restar(){
+     if (document.getElementById("CantPlacas") == 1-1000 && document.getElementById("med43x24") == 1-1000  && document.getElementById("med24x24") == 1-1000 && document.getElementById("med13x18") == 1-1000); {
+            alert("los campos han sido completadoa correcamente se ejecutara el formulario")
+     }else{
+            alert("los campos no han sido completados correctamente")
+          }
+}
+  
+  
 // function (){
 //     if(Calcular){
 //         document.getElementById("botonSubmit").removeAttribute("disabled");
